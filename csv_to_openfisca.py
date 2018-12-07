@@ -24,8 +24,11 @@ result = simulation.calculate('income_tax', period)
 household_id = data.household_id.values
 
 #could be a helper: simulation.household.set_ids() 
-unique = np.unique(household_id).tolist()
-household_index = np.array([unique.index(value) for value in household_id])
+# unique = np.unique(household_id).tolist()
+# household_index = np.array([unique.index(value) for value in household_id])
+
+households = np.sort(np.unique(household_id))
+household_index = np.searchsorted(households, household_id)
 simulation.household.members_entity_id = household_index
 
 #could be a helper: simulation.household.set_roles() 
