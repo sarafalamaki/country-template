@@ -1,0 +1,13 @@
+person_id,household_id,role
+1,a,parent
+2,a,parent
+3,b,first_parent
+4,b,second_parent
+5,c,child
+6,c,child
+7,c,parent
+8,d,second_parent
+9,d,first_parent
+10,e,child
+11,e,first_parent
+12,e,second_parent
