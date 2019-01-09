@@ -10,6 +10,20 @@ from openfisca_core.model_api import *
 from openfisca_country_template.entities import *
 
 
+class TypesTaxeContribution(Enum):
+    social_security_contribution = u"Social security contribution"
+    ecological_contribution = u"Ecological contribution"
+
+
+class specific_contribution(Variable):
+    value_type = Enum
+    possible_values = TypesTaxeContribution
+    default_value = TypesTaxeContribution.social_security_contribution
+    entity = Person
+    label = u"Specific contributions"
+    definition_period = ETERNITY
+
+
 class income_tax(Variable):
     value_type = float
     entity = Person
