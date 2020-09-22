@@ -33,7 +33,7 @@ setup(
             "autopep8 ==1.5.4",
             "flake8 >=3.8.0,<3.9.0",
             "flake8-print",
-            "pycodestyle >=2.6.0",
+            "pycodestyle >=2.6.0,<2.7.0",
             ]
         },
     packages=find_packages(),
