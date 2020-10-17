@@ -1,5 +1,11 @@
 # Changelog
 
+### 3.9.13 - [#91](https://github.com/openfisca/country-template/pull/91)
+
+* Minor change.
+* Details:
+  - Upgrade `pycodestyle`
+
 ### 3.9.12 - [#93](https://github.com/openfisca/country-template/pull/93)
 
 * Minor change.
