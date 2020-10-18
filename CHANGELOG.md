@@ -1,5 +1,12 @@
 # Changelog
 
+### 3.10.1 - [#97](https://github.com/openfisca/country-template/pull/97)
+
+* Technical improvement.
+* Impacted areas: `**/*`
+* Details:
+  - Make style checks stricter and clearer to help country package developers get started
+
 ### 3.10.0 - [#98](https://github.com/openfisca/country-template/pull/98)
 
 * Tax and benefit system evolution.
